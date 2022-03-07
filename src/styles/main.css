@@ -218,14 +218,14 @@ body {
 /* wave */
 .wave {
   width: 30%;
-  height: 50%;
+  height: 70%;
   margin: 5% auto;
   display: flex;
 }
 
 .box {
   width: 2rem;
-  height: 7rem;
+  height: 10rem;
   margin: 5px 5px;
   animation: thing 1s infinite ease-in-out, color 1s infinite ease-in-out;
 }
