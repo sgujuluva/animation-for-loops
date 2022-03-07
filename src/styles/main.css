@@ -184,23 +184,23 @@ body {
   animation: circles-ani 1.5s infinite ease-in-out;
 }
 
-.box-2:nth-child(1) {
+.circle-box:nth-child(1) {
   animation-delay: 0.2s;
 }
 
-.box-2:nth-child(2) {
+.circle-box:nth-child(2) {
   animation-delay: 0.4s;
 }
 
-.box-2:nth-child(3) {
+.circle-box:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.box-2:nth-child(4) {
+.circle-box:nth-child(4) {
   animation-delay: 0.8s;
 }
 
-.box-2:nth-child(5) {
+.circle-box:nth-child(5) {
   animation-delay: 1s;
 }
 
