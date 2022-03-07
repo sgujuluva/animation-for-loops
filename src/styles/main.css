@@ -322,5 +322,58 @@ body {
     background-color: purple;
   }
 }
+/* loading-circles */
+.loading-circle {
+  display: inline-block;
+  margin: auto 10%;
+}
+
+.mini-circles {
+  background-color: darkgoldenrod;
+  transform-origin: 100px 100px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  animation: rotation 3s infinite;
+}
+
+.loading-circle div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.2s;
+}
+
+.loading-circle div:nth-child(2) {
+  transform: rotate(60deg);
+  animation-delay: -1.1s;
+}
+
+.loading-circle div:nth-child(3) {
+  transform: rotate(120deg);
+  animation-delay: -1s;
+}
+
+.loading-circle div:nth-child(4) {
+  transform: rotate(180deg);
+  animation-delay: -0.9s;
+}
+
+.loading-circle div:nth-child(5) {
+  transform: rotate(240deg);
+  animation-delay: -0.8s;
+}
+
+.loading-circle div:nth-child(6) {
+  transform: rotate(360deg);
+  animation-delay: -0.7s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
