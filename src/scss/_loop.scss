@@ -1,5 +1,6 @@
 body{
-    background-color: slategrey;
+      
+background:ghostwhite;
 }
 .main-box{
  
@@ -24,7 +25,8 @@ align-items: center;
     transition: 0.5s;
 }
 .items{
-    background-color: orange;
+background: gold;
+
     width:3rem;
     height:3rem;
     border-radius: 100%;
@@ -33,22 +35,16 @@ align-items: center;
     align-items: center;
     color:grey;
     font-weight: 900;
- /*    @include animation-moving-letters; */
+
 }
-@for $i from 1 through 11{
-    // hey i go form 1 to 30 and every round add by one
+@for $i from 1 through 9{   
     .items:nth-child(#{$i}) {
-     
-        height: random(40) + vh;
-        border-radius: 20% 0;
-      //    @if ($i % 2 0= 0)  even
-      // @if ($i % 2 != 0) {
-      @if ($i % 2 != 0) {
-        background-color: pink;
-        
-      }
+     border-radius: 100%;
+           @if ($i % 2 != 0) {
+        background-color:lavender;
+            }
       @include animation-moving-letters;
     }
-    // i + 1
+
   }
 

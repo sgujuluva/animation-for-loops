@@ -1,5 +1,5 @@
 body {
-  background-color: slategrey;
+  background: ghostwhite;
 }
 
 .main-box {
@@ -17,7 +17,7 @@ body {
   }
 }
 .items {
-  background-color: orange;
+  background: gold;
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
@@ -26,13 +26,11 @@ body {
   align-items: center;
   color: grey;
   font-weight: 900;
-  /*    @include animation-moving-letters; */
 }
 
 .items:nth-child(1) {
-  height: 33vh;
-  border-radius: 20% 0;
-  background-color: pink;
+  border-radius: 100%;
+  background-color: lavender;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -41,8 +39,7 @@ body {
 }
 
 .items:nth-child(2) {
-  height: 38vh;
-  border-radius: 20% 0;
+  border-radius: 100%;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -51,9 +48,8 @@ body {
 }
 
 .items:nth-child(3) {
-  height: 37vh;
-  border-radius: 20% 0;
-  background-color: pink;
+  border-radius: 100%;
+  background-color: lavender;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -62,8 +58,7 @@ body {
 }
 
 .items:nth-child(4) {
-  height: 28vh;
-  border-radius: 20% 0;
+  border-radius: 100%;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -72,9 +67,8 @@ body {
 }
 
 .items:nth-child(5) {
-  height: 30vh;
-  border-radius: 20% 0;
-  background-color: pink;
+  border-radius: 100%;
+  background-color: lavender;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -83,8 +77,7 @@ body {
 }
 
 .items:nth-child(6) {
-  height: 10vh;
-  border-radius: 20% 0;
+  border-radius: 100%;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -93,9 +86,8 @@ body {
 }
 
 .items:nth-child(7) {
-  height: 1vh;
-  border-radius: 20% 0;
-  background-color: pink;
+  border-radius: 100%;
+  background-color: lavender;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -104,8 +96,7 @@ body {
 }
 
 .items:nth-child(8) {
-  height: 15vh;
-  border-radius: 20% 0;
+  border-radius: 100%;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -114,30 +105,8 @@ body {
 }
 
 .items:nth-child(9) {
-  height: 14vh;
-  border-radius: 20% 0;
-  background-color: pink;
-  animation-name: moving;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transition: 0.5s;
-}
-
-.items:nth-child(10) {
-  height: 35vh;
-  border-radius: 20% 0;
-  animation-name: moving;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transition: 0.5s;
-}
-
-.items:nth-child(11) {
-  height: 22vh;
-  border-radius: 20% 0;
-  background-color: pink;
+  border-radius: 100%;
+  background-color: lavender;
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
