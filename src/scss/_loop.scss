@@ -9,6 +9,7 @@ justify-content: space-around;
 align-items: center;
 
 }
+/* animations with names */
 @keyframes moving{
     0%{
         transform: scale(1);
@@ -47,4 +48,46 @@ background: gold;
     }
 
   }
+  /* animations with bubbles */
+  .ani-bubbles{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .bubble{
+      width:3rem;
+      height:3rem;
+      background: lawngreen;
+      border-radius: 100%;
+      display:flex;
+justify-content: space-around;
+align-items: center;
+  }
+  @keyframes animate-bubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+    @keyframes sideWays { 
+        0% { 
+            margin-left:0px;
+        }
+        100% { 
+            margin-left:50px;
+        }
+    }
+
+    .x1, .x2, .x3 {
+        animation: animate-bubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animate-bubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        animation: animate-bubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        
+        left: -5%;
+        top: 5%;
+        transform: scale(2);
+    }
+    
 
