@@ -73,21 +73,112 @@ align-items: center;
 }
     @keyframes sideWays { 
         0% { 
-            margin-left:0px;
+            margin-left:100px;
         }
         100% { 
             margin-left:50px;
         }
     }
 
-    .x1, .x2, .x3 {
+   /*  .x1, .x2, .x3 {
         animation: animate-bubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
         animation: animate-bubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
         animation: animate-bubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
         
-        left: -5%;
+        left: 20%;
         top: 5%;
         transform: scale(2);
-    }
+    } */
+    @for $i from 1 through 3{   
+        .bubble:nth-child(#{$i}) {
+         border-radius: 100%;
+               @if ($i % 2 == 0) {
+            background-color:red;
+                }
+         
+        }
     
+      }
+      /* animation no:3 */
+      .circles{
+          display:flex;
+      }
+      .circle-box{
+          background: crimson;
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+        border-radius: 50%;
+        animation: circles-ani 1.5s infinite ease-in-out;
+      }
 
+      @for $i from 1 through 5 {
+        .box-2:nth-child(#{$i}) {
+          animation-delay: 0.2*$i + s;
+        }
+      }
+      
+      @keyframes circles-ani {
+        0% {
+         transform: scale(1);
+        }
+        50% {
+         transform: scale(0);
+        }
+        100% {
+         transform: scale(1);
+        }
+      }
+      
+
+      /* wave */
+      .wave{
+          width:30%;
+          height:50%;
+          margin:5% auto;
+          display:flex;
+      }
+.box{
+    width:2rem;
+    height:7rem;
+    margin: 5px 5px;
+    animation: thing 1s infinite ease-in-out, color 1s infinite ease-in-out;
+}
+@for $i from 1 through 15 {
+    .box:nth-child(#{$i}) {
+      animation-delay: .1*$i + s;
+    }
+  }
+  @keyframes thing {
+    0% {
+      height: 150px;
+      transform: translateY(0);
+    }
+    50% {
+      height: 75px;
+     /*  transform: translateY(-25px); */
+      transform: translateY(25px);
+    }
+    100% {
+      height: 150px;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes color {
+    0% {
+      background-color:red;
+    }
+    2% {
+      background-color: #0096D7;
+    }
+    50% {
+      background-color: #FCE108;
+    }
+    80% {
+      background-color: green;
+    }
+    100% {
+      background-color: purple;
+    }
+  }
